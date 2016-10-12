@@ -1,0 +1,27 @@
+digraph A {
+    rankdir="LR";
+
+	1 -> 2 [label="A", color="red"];
+
+	1 -> 4 [label="B"];
+
+    2 -> 3 [label="C", color="red"];
+
+    3 -> 4 [style=dashed];
+
+    2 -> 7 [label="D"];
+
+    4 -> 5 [label="E"];
+
+    3 -> 5 [label="F",color="red"];
+
+    5 -> 6 [label="G",color="red"];
+
+    6 -> 7 [label="H",color="red"];
+
+
+    1 [style=bold];
+
+    7 [style=bold];
+
+}
