@@ -65,8 +65,47 @@
 
 
 	\paragraph{}
-	La representación en forma de grafo de dicha red de actividades es la siguiente:
+	La representación en forma de grafo de dicha red de actividades es la siguiente (en color rojo se indica el camino crítico):
 
-	\includegraphics[width=\textwidth]{graph-1}
+	\includegraphics[width=\textwidth]{graph-2}
+
+	\paragraph{}
+	Por tanto, para obtener la duración del proyecto tan solo debemos realizar la suma de la duración de dichas tareas:
+	\[
+	T_A + T_C + T_F + T_G + T_H = 14 + 18 + 8 + 12 + 6 = 58
+	\]
+	Por lo cual sabemos que la duración normal del proyecto sería de \textbf{58 días}.
+
+	\paragraph{}
+	Para obtener el coste total del proyecto hay que realizar la suma de los costes de cada tarea:
+	\[
+	C_A + C_B + C_C + C_D + C_E + C_F + C_G + C_H = 1400 + 1000 + 1600 + 800 + 400 + 400 + 800 + 1500 = 7900
+	\]
+
+		Por lo cual sabemos que la el coste con una duración normal del proyecto sería de \textbf{7900 u.m.}.
+
+	\paragraph{}
+	Ahora supondremos que se quiere realizar un acortamiento día a día hasta llegar al máximo permitido. Para realizar este proceso se reducirá la tarea del camino crítico cuyo coste sea menor. Para realizar esta reducción se ha teniendo en cuenta la posibilidad de que el camino crítico pudiera variar(no ha sucedido).
+
+	\paragraph{}
+	Se ha conseguido por tanto reducir la duracción del proyecto en \textbf{10 días}, lo que fija la duración total del mismo en \textbf{48 días}. Para conseguir esto existe un incremento de \textbf{1350 u.m} en el coste, por lo cual el proyecto total tendría un nuevo coste de \textbf{9250 u.m.}.
+
+	\paragraph{}
+	En las siguientes tablas se muestra el proceso de acortamiento paso a paso:
+	\break
+
+	\noindent
+	\includegraphics[width=\textwidth]{table-02}
+	\includegraphics[width=\textwidth]{table-03}
+	\includegraphics[width=\textwidth]{table-04}
+	\includegraphics[width=\textwidth]{table-05}
+	\includegraphics[width=\textwidth]{table-06}
+	\includegraphics[width=\textwidth]{table-07}
+	\includegraphics[width=\textwidth]{table-08}
+	\includegraphics[width=\textwidth]{table-09}
+	\includegraphics[width=\textwidth]{table-10}
+	\includegraphics[width=\textwidth]{table-11}
+	\includegraphics[width=\textwidth]{table-12}
+
 
 \end{document}
